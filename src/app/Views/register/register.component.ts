@@ -22,7 +22,7 @@ export class RegisterComponent implements OnInit {
   formUdateData = {} as formUpdateI;
   formUpdate = new FormGroup({
     direction: new FormControl(''),
-    mobile: new FormControl(0),
+    mobile: new FormControl(''),
     locationId: new FormControl(0),
   });
 
@@ -43,7 +43,7 @@ export class RegisterComponent implements OnInit {
         // console.log("asd", dataUp);
         this.formUpdate.setValue({
           direction: dataUp.migrantsStatements.direction,
-          mobile: dataUp.migrantsStatements.mobile,
+          mobile: dataUp.migrantsStatements.mobile.toString(),
           locationId: dataUp.migrantsStatements.locationId
         });
       })

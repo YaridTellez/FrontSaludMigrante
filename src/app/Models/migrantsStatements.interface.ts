@@ -2,12 +2,10 @@
 export interface migrantsStatementsI {
     dataSISBEN: string;
     direction: string;
-    mobile: number;
+    mobile: string;
     locationId: number;
     statamentsDate: Date;
     validityDate: Date;
-    latitude: string;
-    longitude: string;
 }
 
 export interface ResponseStatamentsI {
@@ -19,6 +17,6 @@ export interface ResponseStatamentsI {
 export interface formUpdateI {
     dataSISBEN: string;
     direction: string;
-    mobile: number;
+    mobile: string;
     locationId: number;
 }
